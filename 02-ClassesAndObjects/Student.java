@@ -11,20 +11,20 @@ public class Student {
     }
 
     void displayName(){
-            System.out.println(name+"\n");
+            System.out.println(name);
     }
 
     void displayAge(){
-            System.out.println(age+"\n");
+            System.out.println(age);
     }
 
     void displayInfo(){
-            System.out.println(name+"\n"+ semesterNumber+"\n"+ averageGrade+"\n"+studentID+"\n");
+            System.out.println(semesterNumber+"\n"+ averageGrade+"\n"+studentID);
     }
 
     void displaysValid(){
            String valid = (studentIdCardValid == true) ? "Card is valid" : "Card is invalid";
-           System.out.println(valid+"\n");
+           System.out.println(valid);
     }
 
 }

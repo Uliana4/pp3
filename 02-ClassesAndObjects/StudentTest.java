@@ -22,21 +22,21 @@ public class StudentTest {
         a.semesterNumber = 3;
         a.averageGrade = "3.0";
 
-        System.out.println(s.name + " " + s.age);
+        // System.out.println(s.name + " " + s.age);
         s.sayHello();
         s.displayName();
         s.displayAge();
         s.displayInfo();
         s.displaysValid();
 
-        System.out.println(a.name + " " + a.age);
+        // System.out.println(a.name + " " + a.age);
         a.sayHello();
         a.displayName();
         a.displayAge();
         a.displayInfo();
         a.displaysValid();
 
-        System.out.println(c.name + " " + c.age);
+        // System.out.println(c.name + " " + c.age);
         c.sayHello();
         c.displayName();
         c.displayAge();
