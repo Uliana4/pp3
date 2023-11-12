@@ -3,29 +3,29 @@ public class MyCalender {
     static int month = 4;
     static int day = 9;
 
-    static String myDate(int year, int month, int day){
-        String output = String.format("Date: year, month, day");
-        return output;
+    public static String myDate(){
+        return String.format("Date: %04d-%02d-%02d", year, month, day);
     }
 
-    static int days(int month, int days){
-        for(int i=0, i <, i++){
-            return i * days;
+    public static int days(){
+        int[] monthDays = {31,28,31,30,31,30,31,31,30,31,30,31};
+        int passed = 0;
+        for (int days=0; days<(month-1); days++){
+            passed+=monthDays[days];
         }
+        passed+=day;
+        return passed;
     }
 
-    static String monthName(int month){
-        String[] array={"Ja", "Fe", "Mar", "Apr", "May", "Jn", "Jl", "Ags", "Sept", "Oct", "Nov", "Dcm"};
-        for (String a: array){
-            if (array[month-1]==a){
-                return array[month-1];
-            }
-        }
-        return null;
+    public static String monthName(){
+        String[] monthName={"Ja", "Fe", "Mar", "Apr", "May", "Jn", "Jl", "Ags", "Sept", "Oct", "Nov", "Dcm"};
+        return monthName[month-1];
     }
 
-
-    public static void myDate(String[] args){
-        System.out.println(myDate(year-month-day));
+    public static void main(String[] args) {
+        System.out.println(MyCalender.myDate());
+        System.out.println(MyCalender.days());
+        System.out.println(MyCalender.monthName());
     }
+
 }
